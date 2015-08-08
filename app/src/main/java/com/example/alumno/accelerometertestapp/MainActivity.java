@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
         locationManager = (LocationManager)getSystemService(LOCATION_SERVICE);
 
-
     }
 
     @Override
@@ -96,8 +95,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
 
-
-
     private void showLocationRetreiving(final Location location){
 
         final String locationInfo = getString(R.string.provider,location.getProvider())+"\n"+
@@ -122,8 +119,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         locationManager.removeUpdates(this);
 
     }
-
-
 
     /****/
     private void updateTextViews(float x, float y, float z){
@@ -178,6 +173,5 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         Toast.makeText(getApplicationContext(),provider+ "Desactivado",Toast.LENGTH_SHORT).show();
     }
-
     /****/
 }
