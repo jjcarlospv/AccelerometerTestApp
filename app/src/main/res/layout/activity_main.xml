@@ -9,8 +9,7 @@
     <TextView
         android:id="@+id/textview_x_axis"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/abc_search_url_text_normal"/>
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/textview_y_axis"
@@ -22,5 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
+
+    <TextView
+        android:id="@+id/textview_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/abc_search_url_text_normal"/>
 
 </LinearLayout>
